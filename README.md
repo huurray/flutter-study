@@ -2,7 +2,7 @@
 
 - 강의1 : https://nomadcoders.co/flutter-for-beginners
 
-- 강의2 : https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/
+- 강의2 : https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps
 
 ### Example Apps
 
