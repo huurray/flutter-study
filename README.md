@@ -25,3 +25,7 @@
 5. Quiz app
 
 <img src="./assets/5.png" width="220" />
+
+5. Expense tracker app
+
+<img src="./assets/6.png" width="220" />
