@@ -26,14 +26,21 @@
 
 <img src="./assets/5.png" width="220" />
 
-5. Expense tracker app
+6. Expense tracker app
 
 <img src="./assets/6.png" width="220" />
 
-6. Meals app
+7. Meals app
 
 <div style="display: float;">
   <img src="./assets/7-1.png" width="220" style="margin-right: 6px;" />
   <img src="./assets/7-2.png" width="220" style="margin-right: 6px;" />
   <img src="./assets/7-3.png" width="220" />
+</div>
+
+8. Shopping app
+
+<div style="display: float;">
+  <img src="./assets/8-1.png" width="220" style="margin-right: 6px;" />
+  <img src="./assets/8-2.png" width="220" />
 </div>
