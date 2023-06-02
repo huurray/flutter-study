@@ -44,3 +44,12 @@
   <img src="./assets/8-1.png" width="220" style="margin-right: 6px;" />
   <img src="./assets/8-2.png" width="220" />
 </div>
+
+8. Places app
+
+<div style="display: float;">
+  <img src="./assets/9-1.png" width="220" style="margin-right: 6px;" />
+  <img src="./assets/9-2.png" width="220" style="margin-right: 6px;" />
+  <img src="./assets/9-3.png" width="220" style="margin-right: 6px;" />
+  <img src="./assets/9-4.png" width="220" />
+</div>
