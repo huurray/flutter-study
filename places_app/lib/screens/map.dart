@@ -6,8 +6,8 @@ class MapScreen extends StatefulWidget {
   const MapScreen({
     super.key,
     this.location = const PlaceLocation(
-      latitude: 0,
-      longitude: 0,
+      latitude: 37.422,
+      longitude: -122.084,
       address: '',
     ),
     this.isSelecting = true,
@@ -21,6 +21,8 @@ class MapScreen extends StatefulWidget {
 }
 
 class _MapScreenState extends State<MapScreen> {
+  LatLng? _selectedLocation;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,23 +33,36 @@ class _MapScreenState extends State<MapScreen> {
         actions: [
           if (widget.isSelecting)
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pop(_selectedLocation);
+              },
               icon: const Icon(Icons.save),
             ),
         ],
       ),
       body: GoogleMap(
-          initialCameraPosition: CameraPosition(
-            target: LatLng(widget.location.latitude, widget.location.longitude),
-            zoom: 16,
-          ),
-          markers: {
-            Marker(
-              markerId: const MarkerId('m1'),
-              position:
-                  LatLng(widget.location.latitude, widget.location.longitude),
-            )
-          }),
+        onTap: !widget.isSelecting
+            ? null
+            : (position) {
+                setState(() {
+                  _selectedLocation = position;
+                });
+              },
+        initialCameraPosition: CameraPosition(
+          target: LatLng(widget.location.latitude, widget.location.longitude),
+          zoom: 16,
+        ),
+        markers: (_selectedLocation == null && widget.isSelecting)
+            ? {}
+            : {
+                Marker(
+                  markerId: const MarkerId('m1'),
+                  position: _selectedLocation ??
+                      LatLng(
+                          widget.location.latitude, widget.location.longitude),
+                )
+              },
+      ),
     );
   }
 }
