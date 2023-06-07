@@ -32,8 +32,7 @@ class _NewItemState extends State<NewItem> {
         _isLoading = true;
       });
 
-      final url = Uri.https('flutter-study-c7feb-default-rtdb.firebaseio.com',
-          'shopping-list.json');
+      final url = Uri.https('example.com', 'shopping-list.json');
 
       final response = await http.post(
         url,
