@@ -37,6 +37,7 @@ dependencies:
   webview_flutter: ^4.2.2
   gradient_borders: ^1.0.0
   dotted_border: ^2.0.0+3
+  flutter_inappwebview: ^6.0.0-beta.24+1
 
 dev_dependencies:
   flutter_test:

@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => const WebviewScreen(
-                        url: 'https://flutter.dev',
+                        url: 'http://192.168.122.231:3009/bungaecare',
                       ),
                     ),
                   );
